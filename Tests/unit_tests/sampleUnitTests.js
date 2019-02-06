@@ -11,14 +11,14 @@ describe('sampleUnitTests', function () {
   });
 
   it('Should return 200', function (done) {
-    http.get('http://localhost:4000', function (res) {
+    http.get('http://localhost:4001', function (res) {
       assert.equal(200, res.statusCode, 'Result code should be 200.');
       done();
     });
   });
 
   it('Assert title', function (done) {
-    http.get('http://localhost:4000', function (res) {
+    http.get('http://localhost:4001', function (res) {
       assert.equal(200, res.statusCode, 'Result code should be 200.');
       var data = '';
 

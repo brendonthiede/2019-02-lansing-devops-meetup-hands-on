@@ -14,9 +14,9 @@
   },
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --reporter mocha-junit-reporter --reporter-options mochaFile=../TestResults/TEST-RESULT.xml",
-    "unittest": "cross-env PORT=4000 mocha unit_tests/*.js",
-    "unittest:watch": "cross-env PORT=4000 mocha unit_tests/*.js --watch ../",
-    "unittest:report": "cross-env PORT=4000 npm test unit_tests/*.js",
+    "unittest": "cross-env PORT=4001 mocha unit_tests/*.js",
+    "unittest:watch": "cross-env PORT=4001 mocha unit_tests/*.js --watch ../",
+    "unittest:report": "cross-env PORT=4001 npm test unit_tests/*.js",
     "functionaltest": "cross-env webAppUrl=http://localhost:3000 mocha functional_tests/*.js",
     "functionaltest:report": "npm test functional_tests/*.js"
   }
