@@ -22,7 +22,7 @@ If you find the debugging output to be too much, you can just run `npm run start
 
 ### Node Tests
 
-There are both Unit Tests and Functional Tests. The unit tests run against a localhost server on port 4000 and can be run to output to the console, or to create JUnit output as a file.  Typically, for local development you would want to run the unit tests with console output and in a CI environment, you would want the JUnit output. Functional tests run against a running instance of the app. For local development you would most likely run against the app running at http://localhost:3000 while the functional tests that run as part of the deployment process run against the URL for the deployed environment.
+There are both Unit Tests and Functional Tests. The unit tests run against a localhost server on port 4000 and can be run to output to the console, or to create JUnit output as a file.  Typically, for local development you would want to run the unit tests with console output and in a CI environment, you would want the JUnit output. Functional tests run against a running instance of the app. For local development you would most likely run against the app running at http://localhost:3000 while the functional tests that run as part of the deployment process run against the URL for the deployed environment. Note that you will need to run the Application npm install prior to running the unit tests as below.
 
 #### Unit tests with console output
 
